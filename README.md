@@ -18,10 +18,8 @@ Username: labuser
 Password: Cyberlab123!
 (https://github.com/user-attachments/assets/e0049366-15ec-49fc-b841-57a03fb25ab9)
 
-6. Log into the VM and disable the Windows Firewall (for testing connectivity)
 
-
-7. Setup Client-1 in Azure
+5. Setup Client-1 in Azure
 —
 Create the Client VM (Windows 10) named “Client-1”
 Username: labuser
@@ -30,28 +28,28 @@ Attach it to the same region and Virtual Network as DC-1
 (https://github.com/user-attachments/assets/29d4d6e6-47ec-4fa0-a4e3-72a623c98583)
 
 
-8. After VM is created, set Domain Controller’s NIC Private IP address to be static
+6. After VM is created, set Domain Controller’s NIC Private IP address to be static
     (https://github.com/user-attachments/assets/a4f268c9-a9cd-43f1-a81d-991db7a09696)
 
 
-9. Log into the VM and disable the Windows Firewall (for testing connectivity)
+7. Log into the VM and disable the Windows Firewall (for testing connectivity)
 (https://github.com/user-attachments/assets/ed8b417d-6a84-4a24-9283-35e21ac577d5)
 
 
-10. After VM is created, set Client-1’s DNS settings to DC-1’s Private IP address
+8. After VM is created, set Client-1’s DNS settings to DC-1’s Private IP address
 (https://github.com/user-attachments/assets/2b678200-2fa9-4842-9b55-859c3eb011a1)
 
 
-11. From the Azure Portal, restart Client-1
+9. From the Azure Portal, restart Client-1
 (https://github.com/user-attachments/assets/ea6da31c-b7f3-4124-b734-598c01b65995)
 
 
-12.Login to Client-1
+10.Login to Client-1
 Attempt to ping DC-1’s private IP address
 (https://github.com/user-attachments/assets/55c9b03b-1911-4168-a660-4eaedb14a14b)
 
 
-13. From Client-1, open PowerShell and run ipconfig /all
+11. From Client-1, open PowerShell and run ipconfig /all
 The output for the DNS settings should show DC-1’s private IP Address
 (https://github.com/user-attachments/assets/9147bfa3-36aa-4d9f-bc24-339484f60d5a)
 
